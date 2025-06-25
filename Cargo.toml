@@ -10,9 +10,7 @@ license = "MIT"
 
 build = "build.rs"
 include = [
-  "bindings/rust/*",
   "grammar.js",
-  "queries/*",
   "src/*",
   "grammar-src/*",
 ]
