@@ -1,0 +1,28 @@
+[package]
+name = "harper-tree-sitter-dart"
+description = "Dart Tree-sitter grammar for Harper"
+version = "0.0.4"
+keywords = ["incremental", "parsing", "dart"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/elijah-potter/harper-tree-sitter-dart"
+edition = "2018"
+license = "MIT"
+
+build = "build.rs"
+include = [
+  "bindings/rust/*",
+  "grammar.js",
+  "queries/*",
+  "src/*",
+  "grammar-src/*",
+]
+
+[lib]
+path = "src/lib.rs"
+
+[build-dependencies]
+cc = "1.0"
+
+[dependencies]
+tree-sitter = "0.25.6"
+tree-sitter-language = "0.1.5"
