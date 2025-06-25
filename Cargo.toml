@@ -13,6 +13,7 @@ include = [
   "grammar.js",
   "src/*",
   "grammar-src/*",
+  "build.rs"
 ]
 
 [lib]
